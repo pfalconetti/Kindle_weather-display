@@ -9,7 +9,7 @@
 	<?php
     
     // Create a blank image
-    $im = imagecreatetruecolor(600, 800); // FIXME PPF: when generated through PHP, pixels width of the image on Kindle seems to be doubled, though the occupation size is the one defined o_O Looks like the horizontal resolution is not the same as the vertical one...
+    $im = imagecreatetruecolor(600, 800);
 	$white = imagecolorallocate($im, 255, 255, 255);
 	$black = imagecolorallocate($im, 0, 0, 0);
 	imagefill($im, 0, 0, $black);
@@ -21,9 +21,7 @@
     imagestring($im, 1, 10, 100, date('l jS \of F Y h:i:s A'), $black);
     
     // Save the image
-    //imagejpeg($im, 'weather-script-output.jpg');
-	//header('Content-Type: image/png');
-    imagepng($im, 'weather-script-output.png');
+    imagepng($im, 'output.png');
     
     // Free up memory
     imagedestroy($im);

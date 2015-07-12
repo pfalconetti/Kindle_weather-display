@@ -1,2 +1,4 @@
 From:
 http://www.mpetroff.net/archives/2012/09/14/kindle-weather-display/
+
+FIXME PPF: when generated through PHP, pixels width of the image on Kindle seems to be doubled, though the occupation size is the one defined in the PHP declaration of the image o_O The image, itself, is correct, but when displayed in the Kindle it looks like the horizontal resolution is not the same as the vertical one... When using another image file, manually generated/edited, proportions are correct. After several tests, it looks obvious that it has nothing to do with JPEG or PNG format, or with the use or not of text string! Even the rotation of the display on the Kindle has no effect on this.
