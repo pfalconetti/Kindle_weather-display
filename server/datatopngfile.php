@@ -1,3 +1,5 @@
+#!/usr/local/bin/php
+
 <!doctype html>
 <html>
 <head>
