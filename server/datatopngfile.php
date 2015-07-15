@@ -23,7 +23,7 @@
     imagestring($im, 1, 10, 100, date('l jS \of F Y h:i:s A'), $black);
     
     // Save the image
-    imagepng($im, 'output.png');
+    imagepng($im, 'www/kindlews/output.png');
     
     // Free up memory
     imagedestroy($im);
